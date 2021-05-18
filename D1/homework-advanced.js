@@ -74,6 +74,20 @@ Given a word and a list of possible anagrams, select the correct sublist.
     "listen" and a list of candidates like "enlists" "google" "inlets" "banana" the program should return a list containing "inlets".
 */
 
+const anagrams2 = function(word, list) {
+    let sublist = []
+    const wordSorted = Array.from(word).sort().join('')
+    for(string of list) {
+        if(Array.from(string).sort().join('') === wordSorted) {
+            sublist.push(string)
+        }
+    }
+    return sublist
+}
+console.log(anagrams2('listen', ['enlists', 'google', 'inlets', 'banana']))
+
+
+
 /* 4) PALINDROME
 
 Given a string, return true if the string is a palindrome
@@ -258,3 +272,13 @@ and returns a NxN spiral matrix.
         [10,  9,  8, 7]]
 
 */
+
+const matrix = function(n) {
+    let final = []
+
+    let totalNum = n*n
+    let horDir = true
+    for(let x=1; x<= totalNum; x++) {
+        continue
+    }
+}
